@@ -1,0 +1,19 @@
+---
+import BaseLayout from './BaseLayout.astro'
+const { frontmatter } = Astro.props;
+const date = new Date(frontmatter.pubDate + "T23:59:59+13:00").toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<BaseLayout>
+    <h1>{ frontmatter.title }</h1>
+    <p>{ date }</p>
+    { frontmatter.image ? <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} /> : null }
+    <div>tags: 
+        {frontmatter.tags.map((tag, index, arr) => 
+            <>
+                <a href={`/tags/${tag}`}>{tag}</a>{index < frontmatter.tags.length - 1 ? ', ' : ''}
+            </>
+        )}
+    </div>
+    <slot />
+</BaseLayout>
