@@ -5,15 +5,33 @@ const date = new Date(frontmatter.pubDate + "T23:59:59+13:00").toLocaleDateStrin
 ---
 
 <BaseLayout>
-    <h1>{ frontmatter.title }</h1>
-    <p>{ date }</p>
+    <h1 class="title">{ frontmatter.title }</h1>
+    <p class="date">{ date }</p>
     { frontmatter.image ? <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} /> : null }
-    <div>tags: 
+    <p class="tags">tags: 
         {frontmatter.tags.map((tag, index, arr) => 
             <>
-                <a href={`/tags/${tag}`}>{tag}</a>{index < frontmatter.tags.length - 1 ? ', ' : ''}
+                <a href={`/tags/${tag}`}>#{tag}</a>{index < frontmatter.tags.length - 1 ? ', ' : ''}
             </>
         )}
-    </div>
+    </p>
+    <hr />
     <slot />
 </BaseLayout>
+
+<style>
+hr {
+    color: #fff;
+
+}
+.title {
+    margin-bottom: 0em;
+}
+.date {
+    margin: 0em;
+    color: #999;
+}
+.tags {
+    margin: 0em;
+}
+</style>
