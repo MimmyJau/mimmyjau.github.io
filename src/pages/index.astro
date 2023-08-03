@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
 import Blog from "../components/Blog.astro"
-const allPosts = await Astro.glob('../pages/posts/*.md');
+const allPostsUnsorted = await Astro.glob('../pages/posts/*.md');
+const allPosts = allPostsUnsorted.sort((a, b) => { return b.frontmatter.pubDate > a.frontmatter.pubDate ? 1 : -1; });
 ---
 
 <BaseLayout>
