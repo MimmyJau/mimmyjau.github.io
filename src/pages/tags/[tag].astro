@@ -22,7 +22,7 @@ const { posts } = Astro.props;
 ---
 
 <BaseLayout pageTitle={tag}>
-  <h1>Posts tagged with #{tag}</h1>
+  <h1>There {posts.length > 1 ? "are": "is"} {posts.length} {posts.length > 1 ? "posts" : "post"} tagged with #{tag}</h1>
   <ul>
     {posts.map((post) => <Blog post={post} />)}
   </ul>
