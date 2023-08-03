@@ -28,3 +28,9 @@ pre code {
   padding: 10px 20px;
   display: inline-block;
 }
+
+blockquote {
+  border-left: 5px solid #ddd;
+  padding-left: 10px;
+  margin-left: 0;
+}
