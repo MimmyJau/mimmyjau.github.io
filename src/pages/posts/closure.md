@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "closures"
-pubDate: "2023-08-03"
+title: "closure"
+pubDate: "2023-07-24"
 author: "MimmyJau"
 description: "Explaining closures to myself"
 tags: ["js", "programming", "learning in public"]
