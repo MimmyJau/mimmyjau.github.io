@@ -1,9 +1,16 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro"
+import Blog from "../components/Blog.astro"
+const allPosts = await Astro.glob('../pages/posts/*.md');
 ---
 
 <BaseLayout>
 <body>
-    <h1>Jimmy's site</h1>
+    <h1>mimmy's blog</h1>
+    <ul>
+        {allPosts.map((post) => 
+            <Blog post={post} />
+        )}
+    </ul>
 </body>
 </BaseLayout>

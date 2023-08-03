@@ -1,0 +1,35 @@
+---
+const { post } = Astro.props
+const url = post.url 
+const { description, pubDate, tags, title } = post.frontmatter
+const date = new Date(pubDate + "T23:59:59+13:00").toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+---
+
+<li>
+    <p class="blog-list"><a href={url}>{title}</a> ({date})</p>
+    <p class="description"><em>{description}</em></p>
+    <p class="tags">
+        {tags.map((tag, index, arr) => 
+            <>
+                <a href={`/tags/${tag}`}>#{tag}</a>{index < tags.length - 1 ? ', ' : ''}
+            </>
+        )}
+    </p>
+</li>
+
+<style>
+    .blog-list {
+        margin: 0em;
+    }
+
+    .description {
+        margin: 0em;
+        font-size: 0.9em;
+    }
+
+    .tags {
+        margin: 0em;
+        font-size: 0.8em;
+        color: #666;
+    }
+</style>
