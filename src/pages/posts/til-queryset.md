@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "QuerySet.filter()"
+title: "TIL: QuerySet.filter()"
 pubDate: "2023-07-30"
 author: "MimmyJau"
 description: "Most QuerySet methods return new QuerySets"
