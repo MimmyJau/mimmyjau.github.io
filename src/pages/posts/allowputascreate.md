@@ -1,10 +1,10 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "TIL: Allow PUT-as-create in DRF"
+title: "Allow PUT-as-create in DRF"
 pubDate: "2023-07-31"
 author: "MimmyJau"
 description: "Understanding a custom mixin that lets PUT requests create new records"
-tags: ["python", "drf", "source code", "design patterns", "learning in public", "TIL"]
+tags: ["python", "drf", "source code", "design patterns", "learning in public"]
 ---
 
 DRF doesn't allow PUT-as-create by default, which is in violation of the [HTTP RFC](https://stackoverflow.com/a/59171818). Luckily, there is a [`AllowPUTAsCreateMixin`](https://gist.github.com/tomchristie/a2ace4577eff2c603b1b) by Tom Christie (creator of DRF) to implement this behaviour. Here's the code:
