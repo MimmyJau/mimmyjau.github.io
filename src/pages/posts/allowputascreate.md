@@ -53,7 +53,7 @@ class AllowPUTAsCreateMixin(object):
 
 It is perhaps worth taking some time to re-familiarize ourselves with how views, mixins, and serializers all fit together in DRF. 
 
-Here's the code for the implementation of `UpdateAPIView`, `UpdateModelMixin` and `GenericAPIView`.
+Here's the code for the implementation of `UpdateAPIView`, `UpdateModelMixin` and `GenericAPIView`. Note, this is a lot to take in, so I'd recommend skipping past it and only referencing it as needed.
 
 ``` python
 class UpdateAPIView(mixins.UpdateModelMixin, GenericAPIView):
@@ -249,8 +249,7 @@ class GenericAPIView(views.APIView):
         return self.paginator.get_paginated_response(data)
 
 ```
-
-This is a lot to take in, but let me highlight the most important things in each class.
+Here are the most important takeaways.
 
 `GenericAPIView` mainly does 4 things: 
 - It figures out what the QuerySet is
