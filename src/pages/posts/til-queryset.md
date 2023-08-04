@@ -4,7 +4,7 @@ title: "TIL: QuerySet.filter()"
 pubDate: "2023-07-30"
 author: "MimmyJau"
 description: "Most QuerySet methods return new QuerySets"
-tags: ["python", "django", "learning in public", "TIL"]
+tags: ["python", "django", "TIL"]
 ---
 
 Chaining a `.filter()` to a Django QuerySet will [return a new QuerySet](https://docs.djangoproject.com/en/4.2/ref/models/querysets/#filter). It does not modify in-place the existing query.

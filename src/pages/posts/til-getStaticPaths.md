@@ -4,7 +4,7 @@ title: "TIL: getStaticPaths() and removing duplicates in arrays"
 pubDate: "2023-08-02"
 author: "MimmyJau"
 description: "Learnings from the Astro tutorials"
-tags: ["js", "astro", "learning in public", "TIL"]
+tags: ["js", "astro", "TIL"]
 ---
 
 ### `getStaticPaths()`
