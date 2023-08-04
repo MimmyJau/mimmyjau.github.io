@@ -41,7 +41,12 @@ dumbSum(2) // 1 + 2 + 3 = 6
 
 ## Design Decision #2: First-Class Functions
 
-In some languages (including JS), you'd also like for functions to be first-class. In other words, you can associate functions to a variable or pass them as arguments into / return them from other functions just like any other type. Again, there isn't any inherent reason why a language **needs** to have first-class functions (in fact many don't) but it's a nice feature that can be pretty useful. 
+In some languages (including JS), you'd also like for functions to be first-class. In other words, you can:
+1) assign functions to variables, 
+2) pass them as arguments into other functions, and 
+3) return them from other functions just like any other type. 
+
+Again, there isn't any inherent reason why a language **needs** to have first-class functions (in fact many don't) but it's a nice feature that can be pretty useful. 
 
 In a language where functions are first-class, **where you invoke** the function **might not be the same place** as **where you declared** the function. In fact, in a language where functions are first-class, you should expect this to happen a lot.
 
