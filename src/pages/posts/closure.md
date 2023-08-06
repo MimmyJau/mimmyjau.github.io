@@ -4,7 +4,7 @@ title: "closure"
 pubDate: "2023-07-24"
 author: "MimmyJau"
 description: "Explaining closures to myself"
-tags: ["js", "programming", "learning in public"]
+tags: ["js", "plt", "learning in public"]
 ---
 
 This explanation will **definitely not** clear up everyone's misunderstanding of closures, but it did help clear up mine. So for anyone with a similar context and way of thinking as me, hopefully this can help.
