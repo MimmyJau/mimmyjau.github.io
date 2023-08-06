@@ -104,6 +104,9 @@ Step 1: We start with a recursive function.
 
 Step 2: We then remove the self-referential call and instead pass it in as a parameter.
 ``` scheme
+; Credit to Mike Vanier for the tutorial
+; Source: https://mvanier.livejournal.com/2897.html
+
 (define (almost-factorial f)
   (lambda (n)
     (if (= n 0)
@@ -114,6 +117,9 @@ We know the above function would work as intended if we passed it to itself as a
 
 Step 3: The Y combinator takes care of passing a function to itself as many times as necessary.
 ``` scheme
+; Credit to Mike Vanier for the tutorial
+; Source: https://mvanier.livejournal.com/2897.html
+
 (define Y 
   (lambda (f)
     ((lambda (x) (f (lambda (y) ((x x) y))))
