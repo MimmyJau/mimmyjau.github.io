@@ -9,7 +9,7 @@ tags: ["plt", "lisp", "lambda calculus", "learning in public"]
 
 # Motivation
 
-Can you implement recursion without a function referencing itself? A function might not be able to reference itself for a number of reasons: It could be an anonymous function, a combinator[^combinator], or perhaps as a purely intellectual exercises, you'd like to implement recursion without assuming its existence.
+Can you implement recursion if a function isn't allowed to reference itself? A function might not be able to reference itself for a number of reasons: It could be an anonymous function, a combinator[^combinator], or perhaps as a purely intellectual exercises you'd like to implement recursion without assuming its existence.
 
 Consider a classic example of recursion:
 ``` scheme
@@ -19,7 +19,7 @@ Consider a classic example of recursion:
       (* n (factorial (- n 1)))))
 ```
 
-The body of `factorial` references itself on the last line. It can only do that because the function has a name. Regardless of programming language, you'll find this to be typical of any recursive function: **it has a name, and that name is used in the body of the function**.
+The body of `factorial` references itself on the last line, and it can only do that because the function has a name. Regardless of programming language, you'll find this typical of most recursive function: **it has a name, and that name is used in the body of the function**.
 
 Which brings us back to the original question: can you implement recursion if functions aren't allowed to reference themselves (either because they're anonymous, non-recursive, or combinators)? [^anonymous]
 
@@ -37,7 +37,7 @@ Y = λf.(λx.f (x x)) (λx.f (x x))
 
 > In untyped lambda calculus, there are only three notations: 1) variables like `x`, `f`, or `y`, 2) function definitions that use `λ` to denote the start of the function and `.` to separate the arguments from the body, and 3) function invocation.
 
-The `Y` combinator is a function `λ`, that takes a single argument `f`. The body of the function is the two repeating`(λx.f (x x))`'s.  It's not recursive since it doesn't reference itself in its body. 
+The `Y` combinator is a function `λ`, that takes a single argument `f`. The body of the function is the two repeating `(λx.f (x x)) (λx.f (x x))`.  It's not recursive since it doesn't reference itself in its body. 
 
 What you'll notice is that the body is itself another function and its corresponding argument. The first instance of `(λx.f (x x))` is the function and the second instance of `(λx.f (x x))` is the argument passed to the first instance. In other words, the second `(λx.f (x x))` becomes the `x`'s in the function body `f (x x)`.
 
