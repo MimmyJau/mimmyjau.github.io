@@ -10,7 +10,7 @@ tags: ["c++", "oop", "TIL"]
 *\[Disclaimer: Much of what I'm saying here is likely to be completely wrong, partially wrong, or a major oversimplification. If you have any suggestions, please let me know.\]*
 
 ### new in c++
-The `new` operator in C++ is not a constructor (like in JS), but allocates memory (like `malloc` or `calloc` in C). 
+The `new` operator in C++ is not for calling a constructor (like in JS), but allocates memory (like `malloc` or `calloc` in C). 
 
 So for example, this code in C++
 ``` cpp
@@ -32,6 +32,8 @@ int *ptr = calloc(10, sizeof *ptr)
 
 When `new` is called to allocate an array of memory, it is automatically initialized to `0`. 
 
+> While it is possible to use `malloc` and `calloc` in C++, the [general recommendation](https://stackoverflow.com/a/184540) seems to be to use `new` whenever possible. 
+
 ### smart pointers
 
 There are three types of smart pointers in C++ that help automatically free memory once the last reference goes out of scope.
@@ -39,9 +41,11 @@ There are three types of smart pointers in C++ that help automatically free memo
 - `shared_ptr`: Multiple pointers can "own" an object. There is an internal count of all the references, and once all references are out of scope, the object is destroyed and the memory is freed.
 - `weak_ptr`: Used in conjunction with `shared_ptr`. Can create a new pointer without increasing internal reference count of `shared_ptr`. When the last `shared_ptr` is destroyed, the object is deleted even with `weak_ptr` still pointing to it. `weak_ptr`'s are mainly used to solve issues for [cyclic data structures](https://stackoverflow.com/a/7473652/).
 
+> The general consensus [here](https://stackoverflow.com/a/106614) and [here](https://stackoverflow.com/q/25705417) seems to suggest favouring the use of smart pointers over raw pointers whenever possible.
+
 ### templating class
 
-In C++ you can define a template class that uses a placeholder for a type (usually). When you call the class constructor, you first provide the template argument so the class knows which type to give to the placeholder. 
+In C++ you can define a template class that uses a placeholder for a type (usually). When you call the class constructor, you also provide the template argument so the class knows which type to use for the placeholder. 
 
 You can also pass non-type arguments like integral values, pointers, references, and other templates. 
 
@@ -70,7 +74,9 @@ public:
 };
 ```
 
-`unique_ptr`'s are a template class, so they require a template argument like `std::unique_ptr<int>`. Once the template has been instantiated into a class, you can then create an object. 
+### smart pointers are template classes
+
+For example, `unique_ptr` is a template class, so it requires a template argument like `std::unique_ptr<int>`. Once the template has been instantiated into a class, you can then create an object. 
 
 There are only two ways of creating a `unique_ptr`. The old way was
 ``` cpp
