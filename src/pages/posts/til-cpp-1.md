@@ -78,7 +78,7 @@ int main() {
 ``` cpp
 class Base {
 public:
-	virtual ~Base() = default;
+    virtual ~Base() = default;
 }
 ```
 A destructor is called to destroy the object and presumably free whatever memory was allocated to it. 
@@ -106,7 +106,7 @@ These are two distinct languages feature in C++ (unlike C which only had pointer
 `protected`: public and protected members in base class become protected in derived class  
 `private`: public and protected members in base class become private in derived class  
 
-Using public inheritance, we're saying the derived class and the base class are interchangeable, thus adhering to Liskov's Substitution Principle.
+Using public inheritance, we're saying the derived class and the base class are interchangeable, thus adhering to Liskov's substitution principle.
 
 Using private inheritance, we're using the parent class to implement the child class, but that the interface of the child class is different.
 
