@@ -7,7 +7,7 @@ description: "More random C++ learnings"
 tags: ["c++", "oop", "TIL"]
 ---
 
-*\[Disclaimer: Much of what I'm saying here is likely to be wrong, partially wrong, or a major oversimplification. If you have any suggestions, please let me know.\]*
+*\[Disclaimer: Much of what I'm saying here is likely to be completely wrong, partially wrong, or a major oversimplification. If you have any suggestions, please let me know.\]*
 
 ### new in c++
 The `new` operator in C++ is not a constructor (like in JS), but allocates memory (like `malloc` or `calloc` in C). 

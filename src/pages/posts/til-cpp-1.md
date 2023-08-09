@@ -7,7 +7,7 @@ description: "Random C++ learnings"
 tags: ["c++", "oop", "TIL"]
 ---
 
-Random C++ stuff.
+*\[Disclaimer: Much of what I'm saying here is likely to be completely wrong, partially wrong, or a major oversimplification. If you have any suggestions, please let me know.\]*
 
 ### compiler
 
