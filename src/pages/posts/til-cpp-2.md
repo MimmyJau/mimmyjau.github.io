@@ -43,9 +43,9 @@ There are three types of smart pointers in C++ that help automatically free memo
 
 > The general consensus [here](https://stackoverflow.com/a/106614) and [here](https://stackoverflow.com/q/25705417) seems to suggest favouring the use of smart pointers over raw pointers whenever possible.
 
-### templating class
+### class template
 
-In C++ you can define a template class that uses a placeholder for a type (usually). When you call the class constructor, you also provide the template argument so the class knows which type to use for the placeholder. 
+In C++ you can define a class template that uses a placeholder for a type (usually). When you call the class constructor, you also provide the template argument so the class knows which type to use for the placeholder. 
 
 You can also pass non-type arguments like integral values, pointers, references, and other templates. 
 
@@ -64,7 +64,7 @@ public:
 }
 ```
 
-A simple implementation of a template class that uses an integral value as a template argument might look like this.
+A simple implementation of a class template that uses an integral value as a template argument might look like this.
 ```cpp
 template <int Size>
 class FixedArray {
@@ -74,9 +74,9 @@ public:
 };
 ```
 
-### smart pointers are template classes
+### smart pointers are class templates
 
-For example, `unique_ptr` is a template class, so it requires a template argument like `std::unique_ptr<int>`. Once the template has been instantiated into a class, you can then create an object. 
+For example, `unique_ptr` is a class template, so it requires a template argument like `std::unique_ptr<int>`. Once the template has been instantiated into a class, you can then create an object. 
 
 There are only two ways of creating a `unique_ptr`. The old way was
 ``` cpp
