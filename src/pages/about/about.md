@@ -11,19 +11,51 @@ tags: ["me"]
 
 [github](https://www.github.com/mimmyjau) [twitter](https://www.twitter.com/mimmyjau)
 
-I enjoy reading, learning, and sometimes writing. I like talking to people who are passionate about something niche and unpopular. I like synthesizing ideas and reconciling apparent contradictions.
+I'm mostly a generalist. 
 
-I have a deep appreciation for art and artists. I think aesthetics is a worthwhile pursuit in and of itself.
+I enjoy learning and connecting ideas from different fields. 
 
-I think there's no use in being strong if you aren't good, and there's no use in being good if you aren't strong. We need more moral courage.
+I'm happiest when I'm doing something creative.
 
-I have a lot of respect for people who are lighthearted, focused, compassionate, and authentic.
+## Things I like
 
-I think we all have a personal obligation to figure out what it means to self-actualize, and then to do it.
+_alphabetical_
 
-I think the divine is incomprehensible.
+- academics that take seriously their role of educating the general public
+- asian food (banh mi, curry, dim sum, khao soi, pho, sushi, vermicelli) [^nonexhaustive]
+- bill evans
+- books
+- coffee
+- comics (calvin and hobbes, the manhattan projects, one piece)
+- cs
+- dbz
+- digital art (cyberpunk, fantasy, mindscapes, sci-fi)
+- dreams
+- economics
+- films sci-fi (bladerunner 2049, dune, inception, the matrix)
+- glenn gould
+- god [^nondenominational]
+- have one on me
+- lecture notes that are freely available online 
+- libgen
+- life
+- math
+- music
+- neuroscience
+- philosophy
+- physics
+- product
+- programming
+- religion [^nondenominational]
+- space
+- startups
+- team sports (basketball, ice hockey, soccer, volleyball)
+- textbooks (d&f, k&r, ladr, medical physiology by boron and boulpaep)
+- walkable cities (hk, nyc, paris, seoul, tokyo, toronto)
+- wikipedia
 
-Sola gratia.
+[^nondenominational]: non-denominational
+[^nonexhaustive]: non-exhaustive
 
 ## Work and Study
 
