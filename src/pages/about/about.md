@@ -51,6 +51,7 @@ _alphabetical_
 - math
 - multisubculturalism [^madeup]
 - music
+- oneness
 - neuroscience
 - philosophy
 - physics
@@ -67,12 +68,14 @@ _alphabetical_
 - vocal harmonies
 - walkable cities (hk, nyc, paris, seoul, tokyo, toronto)
 - wikipedia
+- you [^you]
 
 [^academics]: e.g. andrej karpathy, andrew ng, andy pavlo, bartosz milewski, benjamin pierce, brian kernighan, daniel p. friedman, donald knuth, emily riehl, eugenia cheng, evi nemeth, graham hutton, jim simons, john ousterhout, john preskill, leonard susskind, michael nielsen, nicole yunger halpern, peter woit, richard feynman, sabine hossenfelder, scott aaronson, sean carroll, sheldon axler, shriram krishnamurthi, stephen hawking, steven strogatz, tai-danae bradley, terence tao, tim gowers, tim roughgarden, w. richard stevens, and many more
 [^analogies]: the weirder the better
 [^madeup]: a made-up word but it makes sense to me
 [^nondenominational]: non-denominational
 [^nonexhaustive]: non-exhaustive
+[^you]: thanks for visiting and reading
 
 ## work and study
 
