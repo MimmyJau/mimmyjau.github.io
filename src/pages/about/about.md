@@ -17,9 +17,9 @@ I'm happiest when I'm doing something creative.
 
 (and again as a haiku)
 
-A generalist  
-Ideas bridging different fields  
-Creativity :)
+a generalist  
+ideas bridging different fields  
+creativity :)
 
 ## Things I like
 
