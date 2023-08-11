@@ -13,7 +13,7 @@ tags: ["me"]
 
 I'm mostly a generalist. 
 
-I enjoy connecting ideas across different fields. 
+I like drawing connections between ideas in different fields.
 
 I'm happiest when I'm doing something creative.
 
