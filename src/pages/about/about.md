@@ -21,7 +21,7 @@ I'm happiest when I'm doing something creative.
 
 _alphabetical_
 
-- academics that take seriously their role of educating the general public
+- academics that take seriously their role of educating the public [^academics]
 - asian food (banh mi, curry, dim sum, khao soi, pho, sushi, vermicelli) [^nonexhaustive]
 - bill evans
 - books
@@ -54,6 +54,7 @@ _alphabetical_
 - walkable cities (hk, nyc, paris, seoul, tokyo, toronto)
 - wikipedia
 
+[^academics]: e.g. andrej karpathy, andrew ng, andy pavlo, bartosz milewski, benjamin pierce, brian kernighan, daniel p. friedman, emily riehl, eugenia cheng, graham hutton, jim simons, john preskill, leonard susskind, nicole yunger halpern, richard feynman, sabine hossenfelder, scott aaronson, sean carroll, sheldon axler, shriram krishnamurthi, stephen hawking, steven strogatz, tai-danae bradley, terence tao, tim gowers, tim roughgarden, and many more
 [^nondenominational]: non-denominational
 [^nonexhaustive]: non-exhaustive
 
