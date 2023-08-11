@@ -26,6 +26,7 @@ creativity :)
 _alphabetical_
 
 - academics who dedicate time and effort towards educating the public [^academics]
+- analogies [^analogies]
 - asian food (banh mi, curry, dim sum, khao soi, pho, sushi, vermicelli) [^nonexhaustive]
 - bill evans
 - books
@@ -44,6 +45,7 @@ _alphabetical_
 - libgen
 - life
 - math
+- multisubculturalism [^madeup]
 - music
 - neuroscience
 - philosophy
@@ -59,6 +61,8 @@ _alphabetical_
 - wikipedia
 
 [^academics]: e.g. andrej karpathy, andrew ng, andy pavlo, bartosz milewski, benjamin pierce, brian kernighan, daniel p. friedman, donald knuth, emily riehl, eugenia cheng, evi nemeth, graham hutton, jim simons, john ousterhout, john preskill, leonard susskind, michael nielsen, nicole yunger halpern, peter woit, richard feynman, sabine hossenfelder, scott aaronson, sean carroll, sheldon axler, shriram krishnamurthi, stephen hawking, steven strogatz, tai-danae bradley, terence tao, tim gowers, tim roughgarden, w. richard stevens, and many more
+[^analogies]: the weirder the better
+[^madeup]: a made-up word but it makes sense to me
 [^nondenominational]: non-denominational
 [^nonexhaustive]: non-exhaustive
 
