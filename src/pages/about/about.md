@@ -7,13 +7,13 @@ description: "Bio"
 tags: ["me"]
 ---
 
-# Me
+# me
 
 [github](https://www.github.com/mimmyjau) [twitter](https://www.twitter.com/mimmyjau)
 
-I'm mostly a generalist.  
-I like drawing connections between ideas in different fields.  
-I'm happiest when I'm doing something creative.
+i'm mostly a generalist.  
+i like drawing connections between ideas in different fields.  
+i'm happiest when I'm doing something creative.
 
 (and again as a haiku)
 
@@ -21,7 +21,7 @@ a generalist
 ideas bridging different fields  
 creativity :)
 
-## Things I like
+## things i like
 
 _alphabetical_
 
@@ -67,7 +67,7 @@ _alphabetical_
 [^nondenominational]: non-denominational
 [^nonexhaustive]: non-exhaustive
 
-## Work and Study
+## work and study
 
 _reverse chronological_
 
