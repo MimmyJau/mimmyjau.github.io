@@ -37,10 +37,14 @@ _alphabetical_
 - digital art (cyberpunk, fantasy, mindscapes, sci-fi)
 - dreams
 - economics
+- emergence
 - films sci-fi (bladerunner 2049, dune, inception, the matrix)
 - glenn gould
 - god [^nondenominational]
+- guerilla ontology and cognitive dissonance
 - have one on me
+- incomprehensibility
+- indeterminability
 - lecture notes that are freely available online 
 - libgen
 - life
@@ -52,7 +56,9 @@ _alphabetical_
 - physics
 - product
 - programming
+- redemption
 - religion [^nondenominational]
+- sci-hub
 - space
 - startups
 - team sports (basketball, ice hockey, soccer, volleyball)
