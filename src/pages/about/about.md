@@ -25,7 +25,7 @@ creativity :)
 
 _alphabetical_
 
-- academics that take seriously their role of educating the public [^academics]
+- academics who dedicate time and effort towards educating the public [^academics]
 - asian food (banh mi, curry, dim sum, khao soi, pho, sushi, vermicelli) [^nonexhaustive]
 - bill evans
 - books
