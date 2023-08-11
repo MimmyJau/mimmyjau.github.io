@@ -45,14 +45,14 @@ _alphabetical_
 - have one on me
 - incomprehensibility
 - indeterminability
+- journaling
 - lecture notes that are freely available online 
 - libgen
 - life
 - math
 - multisubculturalism [^madeup]
-- music
 - oneness
-- neuroscience
+- neuro_
 - philosophy
 - physics
 - product
