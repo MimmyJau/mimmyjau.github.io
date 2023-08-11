@@ -38,7 +38,7 @@ _alphabetical_
 - dreams
 - economics
 - emergence
-- films sci-fi (bladerunner 2049, dune, inception, the matrix)
+- films sci-fi (blade runner 2049, dune, inception, the matrix)
 - glenn gould
 - god [^nondenominational]
 - guerilla ontology and cognitive dissonance
