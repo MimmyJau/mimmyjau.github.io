@@ -11,11 +11,15 @@ tags: ["me"]
 
 [github](https://www.github.com/mimmyjau) [twitter](https://www.twitter.com/mimmyjau)
 
-I'm mostly a generalist. 
-
-I like drawing connections between ideas in different fields.
-
+I'm mostly a generalist.  
+I like drawing connections between ideas in different fields.  
 I'm happiest when I'm doing something creative.
+
+(and again as a haiku)
+
+A generalist  
+Ideas bridging different fields  
+Creativity :)
 
 ## Things I like
 
