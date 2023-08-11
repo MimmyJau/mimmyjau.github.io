@@ -13,7 +13,7 @@ tags: ["me"]
 
 I'm mostly a generalist. 
 
-I enjoy learning and connecting ideas from different fields. 
+I enjoy connecting ideas from different fields. 
 
 I'm happiest when I'm doing something creative.
 
@@ -62,7 +62,7 @@ _alphabetical_
 
 _reverse chronological_
 
-- break from startups
+- taking a break from startups
 - took some more classes in math and cs for "fun" (i.e. abstract algebra, combinatorics, algorithms, numerical analysis)
 - more startups (marketplace)
 - startups (social)
