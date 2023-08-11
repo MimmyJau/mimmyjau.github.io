@@ -27,7 +27,7 @@ _alphabetical_
 
 - academics who dedicate time and effort towards educating the public [^academics]
 - analogies [^analogies]
-- asian food (banh mi, curry, dim sum, khao soi, pho, sushi, vermicelli) [^nonexhaustive]
+- asian food (banh mi, bun bo hue, curry, dim sum, jjigae, khao soi, pho, sushi, vermicelli) [^nonexhaustive]
 - bill evans
 - books
 - coffee
@@ -57,6 +57,7 @@ _alphabetical_
 - startups
 - team sports (basketball, ice hockey, soccer, volleyball)
 - textbooks (d&f, k&r, ladr, medical physiology by boron and boulpaep)
+- vocal harmonies
 - walkable cities (hk, nyc, paris, seoul, tokyo, toronto)
 - wikipedia
 
