@@ -13,7 +13,7 @@ tags: ["me"]
 
 I'm mostly a generalist. 
 
-I enjoy connecting ideas from different fields. 
+I enjoy connecting ideas across different fields. 
 
 I'm happiest when I'm doing something creative.
 
@@ -54,7 +54,7 @@ _alphabetical_
 - walkable cities (hk, nyc, paris, seoul, tokyo, toronto)
 - wikipedia
 
-[^academics]: e.g. andrej karpathy, andrew ng, andy pavlo, bartosz milewski, benjamin pierce, brian kernighan, daniel p. friedman, emily riehl, eugenia cheng, graham hutton, jim simons, john preskill, leonard susskind, nicole yunger halpern, peter woit, richard feynman, sabine hossenfelder, scott aaronson, sean carroll, sheldon axler, shriram krishnamurthi, stephen hawking, steven strogatz, tai-danae bradley, terence tao, tim gowers, tim roughgarden, and many more
+[^academics]: e.g. andrej karpathy, andrew ng, andy pavlo, bartosz milewski, benjamin pierce, brian kernighan, daniel p. friedman, donald knuth, emily riehl, eugenia cheng, graham hutton, jim simons, john ousterhout, john preskill, leonard susskind, michael nielsen, nicole yunger halpern, peter woit, richard feynman, sabine hossenfelder, scott aaronson, sean carroll, sheldon axler, shriram krishnamurthi, stephen hawking, steven strogatz, tai-danae bradley, terence tao, tim gowers, tim roughgarden, and many more
 [^nondenominational]: non-denominational
 [^nonexhaustive]: non-exhaustive
 
