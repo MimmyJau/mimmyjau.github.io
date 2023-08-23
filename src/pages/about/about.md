@@ -9,7 +9,7 @@ tags: ["me"]
 
 # me
 
-[github](https://www.github.com/mimmyjau) [twitter](https://www.twitter.com/mimmyjau)
+[github](https://www.github.com/mimmyjau)
 
 i'm mostly a generalist.  
 i like drawing connections between ideas in different fields.  
