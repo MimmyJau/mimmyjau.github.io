@@ -53,6 +53,7 @@ _alphabetical_
 - multisubculturalism [^madeup]
 - oneness
 - neuro_
+- people who start sentences with "I have a theory that..."
 - philosophy
 - physics
 - product
