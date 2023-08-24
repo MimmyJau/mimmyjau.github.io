@@ -4,7 +4,7 @@ title: "Randomness in Haskell"
 pubDate: "2023-08-23"
 author: "MimmyJau"
 description: "Reconciling randomness with pure functions."
-tags: ["haskell", "fp"]
+tags: ["haskell", "fp", "learning in public"]
 ---
 
 In Haskell, we want functions to be deterministic. On the other hand we also want randomness (which isn't deterministic).
