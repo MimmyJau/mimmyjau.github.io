@@ -32,6 +32,7 @@ _alphabetical_
 - books
 - coffee
 - comics (calvin and hobbes, the manhattan projects, one piece)
+- conversations that start with "I have a theory that..."
 - cs
 - dbz
 - digital art (cyberpunk, fantasy, mindscapes, sci-fi)
@@ -53,7 +54,6 @@ _alphabetical_
 - multisubculturalism [^madeup]
 - oneness
 - neuro_
-- people who start sentences with "I have a theory that..."
 - philosophy
 - physics
 - product
