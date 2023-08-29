@@ -126,10 +126,11 @@ As a vim user, I've found `tpope/vim-fugitive` to be **SUPER** useful for naviga
 
 You can also just run `:G` or `:vert bo G` to open up the "homepage" of fugitive. From there you can selectively stage and commit code by highlighting text and pressing `=`.
 
-A few other helpful git commands include:
+A few other helpful git commands include (all of these can be done in fugitive replacing `git` with `:G`):
 - `git stash` and `git stash pop` for saving current changes before jumping around,
 - `git blame` for finding a commit that added a line of code (good for seeing context like the other changes and the commit messages),
-- `git log --graph --oneline` or `git log --graph --oneline --all` which I've remapped to `git lol` and `git lola` respectively.
+- `git log --graph --oneline` or `git log --graph --oneline --all` which I've remapped to `git lol` and `git lola` respectively,
+- `git rebase -i` for doing all kinds of things inside a nice UI.
 
 ### documentation
 
