@@ -7,7 +7,7 @@ description: "Tools for debugging Python in vim."
 tags: ["debugging", "python", "vim"]
 ---
 
-This is a collection of processes and tools I use to debug in Python in vim.
+This is a collection of processes and tools I use to debug Python in vim.
 
 ### Go to definition:
 
