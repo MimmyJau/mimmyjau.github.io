@@ -9,7 +9,7 @@ tags: ["debugging", "python", "vim"]
 
 This is a collection of processes and tools I use to debug Python in vim.
 
-### Go to definition:
+### go to definition
 
 I use the [`dense-analysis/ale`](https://github.com/dense-analysis/ale) plugin with `pyright` as a language server to jump to definitions and references.
 
@@ -31,11 +31,11 @@ function ALELSPMappings()
 endfunction
 autocmd BufRead,FileType * call ALELSPMappings()
 ```
-### Linter:
+### linter
 
 I use the [`dense-analysis/ale`](https://github.com/dense-analysis/ale) plugin with `pylint` to catch any other small errors.
 
-### Tabbing:
+### tabbing
 
 Related to code navigation, I use `vim-buftabline` to open multiple tabs and jump between them. This feature is provided by most IDEs, but requires a bit of config to get right in vim.
 
@@ -63,7 +63,7 @@ nmap <leader>9 <Plug>BufTabLine.Go(9)
 nmap <leader>0 <Plug>BufTabLine.Go(10)
 ```
 
-### Navigating src:
+### navigating src
 
 In some cases, you want to find a specific file. In this case, being able to search by filename, search by text in a file, or navigating the file structure is important.
 
@@ -73,7 +73,7 @@ Note, that fuzzy finder will recursively search child directories but not any pa
 
 A common navigation problem is I'll jump to a definition in a library and want to look at other files in the vicinity. To solve this problem, vim gives us the `:Ex` command that opens the default vim explorer in the directory of the current file.
 
-### pdb:
+### pdb
 
 Setting a `breakpoint()` in Python is super straightforward. And using the debugger in the terminal has been pretty easy for me so far. The main commands I use are:
 
@@ -88,7 +88,7 @@ I haven't had to use many other commands other than these (so far).
 
 The trickier issue tends to be knowing where to set the `breakpoint()`, which is why code navigation (discussed above) is so important. I will often jump to library source code and set `breakpoint()`''s in order to understand how they work. 
 
-### Altering library code
+### altering library code
 
 Messing around with library code (e.g. adding `breakpoint()`'s) is great for understanding how they work, but Python doesn't give you an easy way of "resetting" library code back to its defaults (especially since library code in `venv` is typically `.gitignore`d).
 
