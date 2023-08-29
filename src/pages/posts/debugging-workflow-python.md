@@ -7,11 +7,11 @@ description: "Tools for debugging Python in vim."
 tags: ["debugging", "python", "vim"]
 ---
 
-This is a collection of processes and tools I use to debug in Python.
+This is a collection of processes and tools I use to debug in Python in vim.
 
 ### Go to definition:
 
-My editor is vim, so I use the [`dense-analysis/ale`](https://github.com/dense-analysis/ale) plugin with `pyright` as a language server to jump to definitions and references.
+I use the [`dense-analysis/ale`](https://github.com/dense-analysis/ale) plugin with `pyright` as a language server to jump to definitions and references.
 
 The built-in commands are `:ALEGoToDefinition` and `:ALEFindReferences` but I've remapped them to `<C-]>` and `<C-^>` respectively.
 
