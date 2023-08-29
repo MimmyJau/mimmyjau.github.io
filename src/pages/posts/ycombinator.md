@@ -128,7 +128,7 @@ Step 3: The Y combinator takes care of passing a function to itself as many time
 
 This gives us recursion as intended. 
 
-# Further Reading
+## Further Reading
 
 - [Recursive arrow functions in JS](https://stackoverflow.com/questions/25228394/how-do-i-write-an-arrow-function-in-es6-recursively/25233790#25233790)
 - [The Y Combinator (Slight Return)](https://mvanier.livejournal.com/2897.html) (the most detailed explanation I've found)
