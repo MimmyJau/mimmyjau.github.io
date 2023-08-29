@@ -7,7 +7,7 @@ description: "Explaining Y combinators to myself"
 tags: ["plt", "lisp", "lambda calculus", "learning in public"]
 ---
 
-# Motivation
+## Motivation
 
 Can you implement recursion if a function isn't allowed to reference itself? A function might not be able to reference itself for a number of reasons: it could be an anonymous function, a combinator[^combinator], or perhaps as a purely intellectual exercises you'd like to implement recursion without assuming its existence.
 
@@ -26,7 +26,7 @@ Which brings us back to the original question: can you implement recursion if fu
 [^combinator]: Functions that don't have access to free variables (i.e. variables that aren't parameters or that aren't defined in the body of the function) are call **combinators**. For example, the definition of `factorial` above is not a combinator, since the reference to `factorial` in the last line is a reference to a free variable. 
 
 [^anonymous]: Anonymous functions by themselves cannot be recursive since they don't have a name to self-reference. For a similar reason, combinators cannot by themselves be recursive. For the purposes of this discussion, anonymous functions, non-recursive functions, and combinators are the same. 
-# Explanation
+## Explanation
 
 The answer is yes and the solution is called the Y combinator. 
 
@@ -91,7 +91,7 @@ If it isn't clear why applying `almost-factorial` to itself an infinite number o
 
 On the other hand,`(almost-factorial almost-factorial)` would work for both `n = 0` and `n = 1`, but not for `n = 2` or higher. Continuing one more time, `(almost-factorial (almost-factorial almost-factorial))` would work for `n <= 2`. By induction, using `Y` to expand `almost-factorial` as many times as necessary, we'll have a functioning `factorial` implementation. 
 
-# Summary
+## Summary
 
 Step 1: We start with a recursive function.
 ``` scheme
