@@ -1,10 +1,10 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: "Debugging Workflow in Python"
+title: "Debugging Python in vim"
 pubDate: "2023-08-29"
 author: "MimmyJau"
-description: "Process and tools for debugging"
-tags: ["debugging", "python"]
+description: "Tools for debugging Python in vim."
+tags: ["debugging", "python", "vim"]
 ---
 
 This is a collection of processes and tools I use to debug in Python.
