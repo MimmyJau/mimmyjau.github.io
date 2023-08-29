@@ -65,7 +65,7 @@ nmap <leader>0 <Plug>BufTabLine.Go(10)
 
 ### navigating src
 
-In some cases, you want to find a specific file. In this case, being able to search by filename, search by text in a file, or navigating the file structure is important.
+In some cases, you want to find a specific file. In this case, being able to search by filename, search by text in a file, or navigating the directory structure is important.
 
 To search by filename or text, I use `junegunn/fzf.vim`. The `:Files` command lets me search by filename and the `:Rg` command lets me search the code itself.
 
