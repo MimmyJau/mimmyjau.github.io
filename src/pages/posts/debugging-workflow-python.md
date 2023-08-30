@@ -124,7 +124,7 @@ The more comfortable I get with git, the more comfortable I get messing around w
 
 As a vim user, I've found `tpope/vim-fugitive` to be **SUPER** useful for navigating different commits and branches all while staying within vim. It replaces all `git <command>` commands with `:G <command>`. Also by default it splits the screen horizontally (which I don't love), so I use `:vert bo G <command>` instead.
 
-You can also just run `:G` or `:vert bo G` to open up the "homepage" of fugitive. From there you can selectively stage and commit code by highlighting text and pressing `=`.
+You can also just run `:G` or `:vert bo G` to open up the "homepage" of fugitive. From there you can selectively stage and commit code by highlighting text and pressing `-`.
 
 A few other helpful git commands include (all of these can be done in fugitive replacing `git` with `:G`):
 - `git stash` and `git stash pop` for saving current changes before jumping around,
