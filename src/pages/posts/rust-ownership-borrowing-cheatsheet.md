@@ -24,7 +24,7 @@ It includes a number of examples that I attempt to explain here. For each, I've 
 ```rust
 fn return_a_string() -> &String {
     let s = String::from("Hello world");
-    &s
+    &s // Lifespan of s will end after function returns.
 }
 ```
 
@@ -45,7 +45,7 @@ fn return_a_string() -> &String {
 **Code Example**: 
 ```rust
 fn stringify_name_with_title(name: &Vec<String>) -> String {
-    name.push(String::from("Esq."));
+    name.push(String::from("Esq.")); // name is an immutable reference.
     let full = name.join(" ");
     full
 }
@@ -67,7 +67,8 @@ fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
     let largest: &String = dst.iter().max_by_key(|s| s.len()).unwrap();
     for s in src {
         if s.len() > largest.len() {
-            dst.push(s.clone());
+            // largest has aliased dst, so dst is temporarily immutable.
+            dst.push(s.clone()); 
         }
     }
 }
@@ -87,7 +88,7 @@ fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
 ```rust
 let v: Vec<String> = vec![String::from("Hello world")];
 let s_ref: &String = &v[0];
-let s: String = *s_ref;
+let s: String = *s_ref; // Attempting to move ownership via dereferencing.
 ```
 
 **Borrow checker violation**: Only owners can move ownership (and references aren't owners). Because this reference has only borrowed the data, it doesn't have permission to **move** ownership to another variable.[^move]
@@ -117,7 +118,8 @@ fn main() {
         String::from("Rustacean")
     );
     let first = get_first(&name);
-    name.1.push_str(", Esq.");
+    // Trying to mutate a field that compiler thinks might have been borrowed.
+    name.1.push_str(", Esq."); 
     println!("{first} {}", name.1);
 }
 ```
@@ -134,6 +136,7 @@ fn main() {
 
 **Code Example**: 
 ```rust
+// Modified from book for clarity.
 let mut a = [0, 1, 2, 3];
 let x = &mut a[0];
 let y = &a[1]; // Immutable reference within lifetime of mutable reference x.
