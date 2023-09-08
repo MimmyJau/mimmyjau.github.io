@@ -18,7 +18,7 @@ It includes a number of examples that I attempt to explain here. For each, I've 
 
 ### Unsafe Program: Returning a Reference to the Stack
 
-**Situation**: A variable in a function body owns a heap allocation and we return a reference to that variable.
+**Situation**: A variable in a function body owns a heap allocation and then returns a reference to that variable.
 
 **Code Example**: 
 ```rust
@@ -40,7 +40,7 @@ fn return_a_string() -> &String {
 
 ### Unsafe Program: Not Enough Permissions on Function Parameters
 
-**Situation**: Function receives an immutable reference (as an argument) and then wants to mutate the data.
+**Situation**: Function receives an immutable reference (as an argument) and then attempts to mutate the data.
 
 **Code Example**: 
 ```rust
@@ -53,9 +53,9 @@ fn stringify_name_with_title(name: &Vec<String>) -> String {
 
 **Borrow checker violation**: The function doesn't have the correct permissions (i.e. write permissions) on the data. 
 
-**Potential undefined behaviour**: It would be unsafe because it might invalidate references in the calling context. For example, in the context calling `stringify_name_with_title` there may be a reference to an element in the vector (not the vector itself). If you push a string onto vector, it might cause Rust to reallocate data to a larger block of memory, thus dangling any references to previous elements.  
+**Potential undefined behaviour**: It would be unsafe because it might invalidate references in the calling context. For example, in the context calling `stringify_name_with_title` there may be a reference to an element in the vector (not the vector itself). Pushing a string onto vector might cause Rust to reallocate data to a larger block of memory, thus dangling any references to previous elements.  
 
-**Solutions**: We could change the function type signature to request either ownership or a mutable reference, but this is a less intuitive API. A better solution is to clone the data, mutate the data however we need, and then return the clone. 
+**Solutions**: We could change the function type signature to request either ownership or a mutable reference, but this is a less intuitive API. A better solution is to clone the data, mutate the clone, and then return the clone. 
 
 ### Unsafe Program: Aliasing and Mutating a Data Structure
 
@@ -74,11 +74,11 @@ fn add_big_strings(dst: &mut Vec<String>, src: &[String]) {
 }
 ```
 
-**Borrow checker violation**: Either we can have unlimited immutable references, or a single mutable reference. If a variable has write permissions, and then gets borrowed by an alias, it will lose its write permissions because can't have both a mutable and immutable reference at the same time. Like the previous example, we've violated the Pointer Safety Principle. But unlike the previous example, instead of trying to mutate a reference that doesn't have write permission, here we're trying to mutate the owner which has temporarily lost its write permission. 
+**Borrow checker violation**: There can be unlimited immutable references, or a single mutable reference. If a variable has write permissions, and then gets borrowed by an alias, it will lose its write permissions because can't have both a mutable and immutable reference at the same time. Like the previous example, we've violated the Pointer Safety Principle. But unlike the previous example, instead of trying to mutate a reference that doesn't have write permission, here we're trying to mutate the owner which has temporarily lost its write permission. 
 
-**Potential undefined behaviour**: Like in the previous example, by pushing data into `dst`, we could deallocate data, thus invalidating the immutable reference `largest.`
+**Potential undefined behaviour**: Like in the previous example, by pushing data into `dst`, we could reallocate data, potentially invalidating the immutable reference `largest.`
 
-**Solutions**: The solution is that if you have to create an alias, shorten its lifetime so that the owner gets back write permissions before mutating the data.
+**Solutions**: The solution is that if we have to create an alias, shorten its lifetime so that the owner gets back write permissions before mutating the data.
 
 ### Unsafe Program: Copying vs Moving
 
@@ -95,7 +95,7 @@ let s: String = *s_ref; // Attempting to move ownership via dereferencing.
 
 [^move]: Could there exist a feature that lets references move ownership without permitting multiple owners? For example, the reference could remove permissions of original owner after moving ownership to a new variable.
 
-**Potential undefined behaviour**: In the above case it could lead to a double-free. If you let `s` take ownership of `v[0]`, then now you have two variables that think they own `v[0]`, namely `v` and `s`. At the end of the stack frame, both will try to free the heap allocation, leading to undefined behaviour.
+**Potential undefined behaviour**: In the above case it could lead to a double-free. If `s` takes ownership of `v[0]`, then now there are two variables that think they own `v[0]`, namely `v` and `s`. At the end of the stack frame, both will try to free the heap allocation, leading to undefined behaviour.
 
 **Solutions**: You can either:
 1) Avoid moving the variable (i.e. avoid issue altogether).
@@ -126,7 +126,7 @@ fn main() {
 
 **Borrow checker violation**: If the compiler can't tell which field specifically is borrowed, the entire tuple gets borrowed as a conservative safety measure. `name` loses write permissions, to avoid a situation where there is an alias (via `first`) and a mutation (via `name`). Thus `name.1.push_str()`, which tries to write to a variable that's lost its write permission, is caught by the compiler.
 
-**Potential undefined behaviour**: In this case, since we know for sure we would be mutating a different field in the tuple, there would be no undefined behaviour! Hence why the program is safe. However, if you were to allow aliasing and mutations of the same tuple field, it would violate the Pointer Safety Principle, which could lead to data races, dangling pointers, or other unexpected results.
+**Potential undefined behaviour**: In this case, since we know for sure we would be mutating a different field in the tuple, there would be no undefined behaviour! Hence why the program is safe. However, if we allowed aliasing and mutations of the same tuple field, it would violate the Pointer Safety Principle, which could lead to data races, dangling pointers, or other unexpected results.
 
 **Solutions**: The easy solution in this case is to move the code out of the function so the compiler knows which field is being borrowed.
 
@@ -147,7 +147,7 @@ let y = &a[1]; // Immutable reference within lifetime of mutable reference x.
 
 **Potential undefined behaviour**: In the example above, we know the program won't cause undefined behaviour since it's reading and mutating two distinct elements. However, the compiler doesn't know that, so it won't compile. If, in another situation, there was both an alias and a mutation of the same element, then potential undefined behaviour includes data races or iterator invalidation.
 
-**Solutions**: Can use a special function called `.split_first_mut()` that is implemented using unsafe rust.
+**Solutions**: Can use a special function called `.split_first_mut()` that is implemented using unsafe Rust.
 
 ### Summary
 
