@@ -32,6 +32,7 @@ _alphabetical_
 - books
 - coffee
 - comics (calvin and hobbes, the manhattan projects, one piece)
+- computers
 - conversations that start with "I have a theory that..."
 - cs
 - dbz
