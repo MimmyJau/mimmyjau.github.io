@@ -70,7 +70,7 @@ _alphabetical_
 - unmerited grace
 - vim
 - vocal harmonies
-- walkable cities (hk, nyc, paris, seoul, tokyo, toronto)
+- walkable cities (hk, london, nyc, paris, singapore, tokyo, toronto)
 - wikipedia
 - you [^you]
 
