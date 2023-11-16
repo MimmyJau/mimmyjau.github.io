@@ -10,12 +10,17 @@ export default defineConfig({
   site: "https://mimmyjau.github.io",
   integrations: [mdx()],
   markdown: {
+
+    // Source 1: https://blog.alexafazio.dev/blog/render-latex-in-astro/
+    // Source 2: https://r3zz.io/posts/astro-blog-latex/
     remarkPlugins: [remarkMath],
     rehypePlugins: [rehypeKatex],
+
     // Source: https://github.com/withastro/astro/pull/4138
     remarkRehype: {
       footnoteLabel: "footnotes",
     },
+
     shikiConfig: {
       // Choose from Shiki's built-in themes (or add your own)
       // https://github.com/shikijs/shiki/blob/main/docs/themes.md
