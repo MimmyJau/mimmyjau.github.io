@@ -21,7 +21,7 @@ For example, knowing that
 
 it follows that $1101_2$ **must** be defined as $-3$. 
 
-Almost everything else about two's complement is a consequence of these ideas. For example, this explains why the common trick for multiply by $-1$ is to flip all the bits and add one.
+Almost everything else about two's complement is a consequence of these ideas. For example, this explains why the common trick for multiplying by $-1$ is to flip all the bits and add one.
 
 ## Why this works (optional reading)
 
