@@ -7,9 +7,9 @@ description: "Key concepts in two's complement."
 tags: ["architecture", "memory", "learning in public"]
 ---
 
-If there's only one thing you need to understand about two's complement, it's the following:
+If there's one thing to know about two's complement, it's the following:
 
->  Negative numbers should have binary representations such that subtraction can be accomplished using the same algorithm as addition.
+>  Negative numbers should have binary representations such that subtraction can be accomplished using the *same algorithm* as addition.
 
 In order for this to work, the following is **sufficient**:
 
@@ -38,5 +38,9 @@ If $x >= 0$ and $y <= 0$, then the statement is directly applicable since $\odot
 If both $x$ and $y$ are non-negative and $x >= y$, then $(x-y) \odot y = x - y + y = x$, where the first equality is true since binary addition of two positive number is simply addition. Applying $\odot \, (-y)$ to both sides we get $(x-y) \odot y \odot (-y) = x \odot (-y)$, with the left-hand side simplifying to $x - y \odot 0 = x - y$, satisfying the equality.
 
 *The rest is left as an exercise to the reader.*
+
+## Update (Nov 17, 2023)
+
+I came across [this comment](https://news.ycombinator.com/item?id=38299777) on HN which gives a nice intuition for Two's Complement. We know that incrementing an integer of *N* bits will overflow at $2^N$. So to represent negative numbers, we start at $0\ldots 0_2$ and go backwards to $1\ldots 1_2$ to get $-1_{10}$, $1\ldots 10_2$ to get $-2_{10}$, and so on and so forth. 
 
 [^binary]: The subscript $2$ in $0101_2$ means this is a binary number.
