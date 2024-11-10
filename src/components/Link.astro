@@ -1,0 +1,13 @@
+---
+const { link } = Astro.props
+const { params } = Astro.params
+const { name, url, _date, tags } = link
+const date = new Date(_date + "T23:59:59+13:00").toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+import Tags from "./Tags.astro"
+---
+
+<li>
+    <a href={url}>{name}</a>
+    <span class="tags">
+    <Tags tags={tags} />
+</li>

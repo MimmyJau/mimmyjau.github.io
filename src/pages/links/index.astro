@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Link from '../../components/Link.astro';
+import links from "./links.ts"
+---
+
+<BaseLayout>
+    <h1>links</h1>
+    <div>
+        <ul>
+        {links.map(link => <Link link={link}/>)}
+        </ul>
+    </div>
+</BaseLayout>

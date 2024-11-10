@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Link from '../../components/Link.astro';
+import links from "./links.ts"
+
+export async function getStaticPaths() {
+    const uniqueTags = [...new Set (links.map(link => link.tags).flat())]
+
+    return uniqueTags.map((tag) => {
+        const filteredLinksUnsorted = links.filter(link => link.tags?.includes(tag))
+        return {
+            params: { tag },
+            props: { links: filteredLinksUnsorted }
+        }
+    })
+}
+
+const { tag } = Astro.params
+const { links } = Astro.props
+---
+
+<BaseLayout pageTitle={tag}>
+    <h1>links</h1>
+    <div>
+        <ul>
+        {links.map(link => <Link link={link}/>)}
+        </ul>
+    </div>
+</BaseLayout>
