@@ -20,6 +20,8 @@
     --yellow: #ebcb8b;
     --green:  #a3be8c;
     --purple: #b48ead;
+
+    --yellowRGBA: 235, 203, 139;
 }
 
 html {
@@ -111,3 +113,11 @@ blockquote {
   margin-left: 0;
 }
 
+.tag-link {
+  font-size: 13px;
+  color: var(--yellow)
+}
+
+.tag-link:hover {
+  color: rgba(var(--yellowRGBA), 0.5)
+}
