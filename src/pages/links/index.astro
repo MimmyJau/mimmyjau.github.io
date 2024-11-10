@@ -2,13 +2,17 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Link from '../../components/Link.astro';
 import links from "./links.ts"
+
+const sortedLinks = links.sort((a,b) => { return b.dateAdded > a.dateAdded ? 1 : -1 })
 ---
 
 <BaseLayout>
     <h1>links</h1>
+    <h2>all</h2>
+    <p><em>sorted by date added</em></p>
     <div>
         <ul>
-        {links.map(link => <Link link={link}/>)}
+        {sortedLinks.map(link => <Link link={link}/>)}
         </ul>
     </div>
 </BaseLayout>

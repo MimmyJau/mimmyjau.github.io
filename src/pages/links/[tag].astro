@@ -8,6 +8,7 @@ export async function getStaticPaths() {
 
     return uniqueTags.map((tag) => {
         const filteredLinksUnsorted = links.filter(link => link.tags?.includes(tag))
+        const filteredLinksSorted = links.sort((a,b) => b.dateAdded > a.dateAdded ? 1 : -1)
         return {
             params: { tag },
             props: { links: filteredLinksUnsorted }
@@ -21,6 +22,8 @@ const { links } = Astro.props
 
 <BaseLayout pageTitle={tag}>
     <h1>links</h1>
+    my favourite things on the internet
+    <h2>{tag}</h2>
     <div>
         <ul>
         {links.map(link => <Link link={link}/>)}
