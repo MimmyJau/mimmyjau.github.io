@@ -1,5 +1,11 @@
 const links = [
     {
+        name: "Trying to Survive in Prison as a First Time Offender",
+        dateAdded: "2022-12-29",
+        url: "https://www.youtube.com/watch?v=bEWdAYvANcc",
+        tags: ["fight"]
+    },
+    {
         name: "Jonny Kim on the Jocko Willink podcast",
         dateAdded: "2022-12-27",
         url: "https://www.youtube.com/watch?v=yujP3-AxXsI",
