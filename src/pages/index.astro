@@ -8,6 +8,7 @@ const allPosts = allPostsUnsorted.sort((a, b) => { return b.frontmatter.pubDate 
 <BaseLayout>
 <body>
     <h1>mimmy's blog</h1>
+    <a href="/rss.xml">rss</a>
     <ul>
         {allPosts.map((post) => 
             <Blog post={post} />
